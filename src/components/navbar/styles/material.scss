@@ -1,19 +1,15 @@
 @use '@material/top-app-bar/mixins';
 @use '@material/top-app-bar/variables';
+
 @use'./shared.scss';
 
 .ark-navbar {
   @include shared.ark-navbar;
-
-  @include mixins.fill-color-accessible(primary);
-  @include mixins.icon-ink-color(on-primary);
-
   height: variables.$row-height;
 }
 
 .ark-nav {
   @include shared.ark-nav;
-
   padding: variables.$section-vertical-padding variables.$section-horizontal-padding;
 }
 
